@@ -1,0 +1,12 @@
+# Brainstorming/visual companion scratch files (local session data, contains auth tokens)
+.superpowers/
+
+# Internal client planning docs (not for the public repo)
+Referencias/
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
