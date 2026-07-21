@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://botujurutrail.com.br/sitemap.xml
