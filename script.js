@@ -15,6 +15,14 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
+  // Show "Kit Experience Encerrado" rows only after their cutoff date has passed
+  document.querySelectorAll(".price-encerrado[data-hide-until]").forEach((row) => {
+    const hideUntil = new Date(`${row.dataset.hideUntil}T23:59:59`);
+    if (new Date() > hideUntil) {
+      row.style.display = "";
+    }
+  });
+
   // Close mobile menu when a nav link is clicked
   const navToggle = document.querySelector("#nav-toggle");
   if (navToggle) {
