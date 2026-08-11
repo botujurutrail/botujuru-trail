@@ -149,15 +149,16 @@ document.addEventListener("DOMContentLoaded", () => {
     const waterG = routeMapEl.querySelector("#route-map-water");
     const medicG = routeMapEl.querySelector("#route-map-medic");
     const arrowsG = routeMapEl.querySelector("#route-map-arrows");
-    const gainEl = routeMapEl.querySelector("#route-map-gain");
-    const eleMaxEl = routeMapEl.querySelector("#route-map-ele-max");
-    const eleMinEl = routeMapEl.querySelector("#route-map-ele-min");
-    const eleEndEl = routeMapEl.querySelector("#route-map-ele-end");
-    const sparkEl = routeMapEl.querySelector("#route-map-spark");
-    const sparkLineEl = routeMapEl.querySelector("#route-map-spark-line");
     const photoImg = routeMapEl.querySelector("#route-map-photo");
-    const downloadLink = routeMapEl.querySelector("#route-map-download");
-    const downloadLabel = routeMapEl.querySelector("#route-map-download-label");
+    // These now live in .route-card (quick facts column), not inside #route-map.
+    const gainEl = document.querySelector("#route-map-gain");
+    const eleMaxEl = document.querySelector("#route-map-ele-max");
+    const eleMinEl = document.querySelector("#route-map-ele-min");
+    const eleEndEl = document.querySelector("#route-map-ele-end");
+    const sparkEl = document.querySelector("#route-map-spark");
+    const sparkLineEl = document.querySelector("#route-map-spark-line");
+    const downloadLink = document.querySelector("#route-map-download");
+    const downloadLabel = document.querySelector("#route-map-download-label");
 
     function waterIconMarkup() {
       return '<circle r="9"/><path d="M0 -6c2.2 2.8 3.6 4.6 3.6 6.6a3.6 3.6 0 1 1-7.2 0c0-2 1.4-3.8 3.6-6.6z"/>';
@@ -251,7 +252,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const svgEl = routeMapEl.querySelector("#route-map-svg");
     const photoNote = routeMapEl.querySelector("#route-map-photo-note");
-    const extraEl = routeMapEl.querySelector("#route-map-extra");
     routeMapEl.querySelectorAll(".route-map-toggle-view button").forEach((btn) => {
       btn.addEventListener("click", () => {
         const view = btn.dataset.view;
@@ -259,7 +259,6 @@ document.addEventListener("DOMContentLoaded", () => {
         if (svgEl) svgEl.style.display = view === "illust" ? "block" : "none";
         if (photoImg) photoImg.hidden = view !== "photo";
         if (photoNote) photoNote.hidden = view !== "photo";
-        if (extraEl) extraEl.classList.toggle("hidden", view === "photo");
       });
     });
 
