@@ -175,7 +175,7 @@ nav.links a:hover, nav.links a:active, nav.links a:focus{color:var(--orange);}
 .route-stat{display:flex; justify-content:space-between; padding:10px 0; border-bottom:1px dashed var(--line); font-size:14px;}
 .route-stat:last-of-type{border-bottom:none;}
 .route-stat b{color:var(--orange); font-family:'Bebas Neue',sans-serif; font-weight:400; letter-spacing:0.03em; font-size:15px;}
-.maps-link{margin-top:16px; font-size:14px; color:var(--cream); text-decoration:underline; text-underline-offset:3px;}
+.maps-link{display:inline-block; margin-top:12px; font-size:14px; color:var(--cream); text-decoration:underline; text-underline-offset:3px;}
 
 /* kits */
 .grid-2{display:grid; grid-template-columns:1fr 1fr; gap:18px;}
