@@ -170,6 +170,8 @@ nav.links a:hover, nav.links a:active, nav.links a:focus{color:var(--orange);}
 }
 .route-map-download:hover{border-color:var(--orange); color:var(--orange);}
 .route-card{background:rgba(255,255,255,0.04); border:1px solid var(--line); border-radius:14px; padding:20px;}
+.route-card-heading{font-family:'Bebas Neue',sans-serif; font-size:13px; letter-spacing:0.1em; text-transform:uppercase; color:var(--orange); margin-bottom:12px;}
+.route-card-heading-spaced{margin-top:20px; padding-top:20px; border-top:1px solid var(--line);}
 .route-stat{display:flex; justify-content:space-between; padding:10px 0; border-bottom:1px dashed var(--line); font-size:14px;}
 .route-stat:last-of-type{border-bottom:none;}
 .route-stat b{color:var(--orange); font-family:'Bebas Neue',sans-serif; font-weight:400; letter-spacing:0.03em; font-size:15px;}
