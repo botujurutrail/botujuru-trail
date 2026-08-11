@@ -157,6 +157,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const eleEndEl = document.querySelector("#route-map-ele-end");
     const sparkEl = document.querySelector("#route-map-spark");
     const sparkLineEl = document.querySelector("#route-map-spark-line");
+    const eleKmEl = document.querySelector("#route-map-elev-km");
     const downloadLink = document.querySelector("#route-map-download");
     const downloadLabel = document.querySelector("#route-map-download-label");
 
@@ -187,6 +188,7 @@ document.addEventListener("DOMContentLoaded", () => {
       if (eleMaxEl) eleMaxEl.textContent = route.eleMax + " m";
       if (eleMinEl) eleMinEl.textContent = route.eleMin + " m";
       if (eleEndEl) eleEndEl.textContent = route.eleEnd;
+      if (eleKmEl) eleKmEl.textContent = route.gpxLabel;
       if (downloadLabel) downloadLabel.textContent = route.gpxLabel;
       if (downloadLink) downloadLink.setAttribute("href", route.gpx);
       if (photoImg) photoImg.setAttribute("src", route.photo);
